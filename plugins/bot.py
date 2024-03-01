@@ -79,12 +79,11 @@ buttons = [
 alive_txt = """
 The Ultroid Userbot
 
-  ◍ Version - {}
-  ◍ Py-Ultroid - {}
-  ◍ Telethon - {}
+  🥀 Version - {}
+  🥀 Telethon - {}
 """
 
-in_alive = "{}\n\n🌀 <b>Ultroid Version -><b> <code>{}</code>\n🌀 <b>PyUltroid -></b> <code>{}</code>\n🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n🌀 <b>Branch -></b>[ {} ]\n\n• <b>Join @TeamUltroid</b>"
+in_alive = "{}\n\n🥀 <b>VasudevKrishnaX Version -><b> <code>{}</code>\n🥀  <code>{}</code>\n🥀 <b>Python -></b> <code>{}</code>\n🥀 <b>Uptime -></b> <code>{}</code>\n🌀 <b>Branch -></b>[ {} ]\n\n• <b>Join @VrindavanNeeko16008</b>"
 
 
 @callback("alive")
@@ -130,7 +129,7 @@ async def lol(ult):
         )
 
         if _e := udB.get_key("ALIVE_EMOJI"):
-            als = als.replace("🌀", _e)
+            als = als.replace("🥀", _e)
     else:
         parse = "md"
         als = (get_string("alive_1")).format(
