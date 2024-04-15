@@ -122,13 +122,3 @@ async def get_the_addons_lol(event):
             get_string("core_18").format(shortname, e),
             time=3,
         )
-import os
-from telethon.tl.functions.photos import UploadProfilePhotoRequest as G
-import random
-@client.on(events.NewMessage(pattern="op"))
-async def op(event):
-   images = os.listdir("Vasudev")
-   while True:
-      await asyncio.sleep(1500)
-      await client(G(file=await client.upload_file(f"Vasudev/{random.choice(images)}")))
-
